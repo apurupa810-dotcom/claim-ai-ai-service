@@ -25,4 +25,11 @@ async def analyze_claim(claim: ClaimRequest):
 
 @app.get("/health")
 async def health():
-    return {"status": "healthy", "service": "ClaimAI AI Service (Python)"}
+    return {"status": "healthy", "service": "ClaimAI AI Service (Python)"
+
+@app.post("/orchestra/analyze")
+async def multi_agent_analyze(claim: ClaimRequest):
+    # ... (paste the code above)
+    pass
+           }
+    
